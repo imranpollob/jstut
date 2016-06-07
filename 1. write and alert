@@ -5,6 +5,17 @@
     <title>Document</title>
 </head>
 <body>
+<script type="text/javascript">
+    document.write("My name is POLLOB");
 
+    var name = "POLLOB";
+
+    function show() {
+        alert(name);
+    }
+</script>
+
+
+<button type="button" onclick="show()">Show my name</button>
 </body>
 </html>
