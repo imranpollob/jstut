@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // Constructing a functon. spelling is capital F
+    var func = new Function("x", "y", "return x+y;");
+    function secondFunction(a,b){
+        var result;
+        result = func(a,b);
+        document.write ( result );
+    }
+</script>
+<!-- button will replace will result after the button is clicked -->
+<button type="button" onclick="secondFunction(2,3)">Click</button>
+
+</body>
+</html>
