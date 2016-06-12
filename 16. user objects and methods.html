@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function currency(value) {
+        this.mycurrency = value;
+    }
+
+    function showOff(price, amount) {
+        this.myprice = price;
+        this.myamount = amount;
+        this.mycurrency = currency;
+    }
+
+
+    var money = new showOff(85000, 5);
+    money.mycurrency("dollar");
+
+    document.write(money.myprice);
+    document.write("<br>");
+    document.write(money.myamount);
+    document.write("<br>");
+    document.write(money.mycurrency);
+</script>
+</body>
+</html>
